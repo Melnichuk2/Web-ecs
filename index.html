@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Віртуальна екскурсія по Університету</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Віртуальна екскурсія по Університету</h1>
+    </header>
+
+    <footer>
+        <button onclick="goToHome()">Головна</button>
+        <button onclick="goToSocialMedia()">Соціальні мережі</button>
+    </footer>
+    
+    <main>
+        <div id="map">
+            <button id="locations-toggle" onclick="toggleLocations()">Локации</button>
+            <ul id="locations-list" style="display: none;">
+                <li><button onclick="showLocation('Головних вхід на територію університету')">Віхд на територію Униіерситут</button></li>
+                <li><button onclick="showLocation('Парк')">Парк</button></li>
+                <li><button onclick="showLocation('Басейн')">Басейн</button></li>
+                <li><button onclick="showLocation('Міні футбольний стадіон')">Міні футбольний стадіон </button></li>
+                <li><button onclick="showLocation('Вхід до Херсонського академічног ліцею ім.О.В.Мішукова')">Вхід до Херсонського академічного ліцею ім.О.В.Мішукова </button></li>
+                <li><button onclick="showLocation('Головна площа')">Спортивный комплекс</button></li>
+            </ul>
+        </div>
+        
+        <div id="location-info">
+            <img id="location-image" src="" alt="Фотография локации">
+            <p id="location-description">Описание локации</p>
+        </div>
+    </main>
+    
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
