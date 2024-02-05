@@ -36,7 +36,7 @@ function showLocation(location) {
             locationImage.src = "центр.jpg";
             locationDescription.innerText = "Головна площа університету - це центральне місце на території університету, де проводяться різні заходи та заходи.";
             break;
-        // Додайте описи та шляхи до зображень для інших локацій
+        
     }
 }
 
@@ -45,6 +45,5 @@ function goToHome() {
 }
 
 function goToSocialMedia() {
-    // Замените ссылками на социальные сети вашего университета
     window.location.href = "https://www.kspu.edu/";
 }
