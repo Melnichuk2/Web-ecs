@@ -5,46 +5,66 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #eaeaf1;
+    color: #004499;
     padding: 20px;
     text-align: center;
 }
 
-.button-list.horizontal-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    list-style: none;
+.nav{
+    background-color: #ececec;
 }
 
-.button-list.horizontal-list li {
-    margin: 0;
-}
-
-.button-list.horizontal-list button {
-    background-color: #007bff;
-    color: #fff;
+.dropbtn {
+    background-color: #004499;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
     border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    width: 140px; 
+    height: 50px; 
 }
 
-.button-list.horizontal-list button:hover {
-    background-color: #0056b3;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
- 
 
-.hidden {
+.dropdown + .dropdown {
+    margin-top: 20px; 
+} 
+
+.dropdown-content {
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0653b4;
+}
+
 
 main {
+    background-color: #eaeaf1;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -54,17 +74,18 @@ main {
 #location-info {
     width: 60%;
     padding: 20px;
+    display: flex;
 }
 
 footer {
-    background-color: #333;
+    background-color: #eaeaf1;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #004499;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -73,20 +94,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #004499;
 }
 
-#locations-list.hidden {
-    display: none;
-}
-
-
-.hidden {
-    display: none;
-}
 
 img {
     width: 600px; 
-    height: 400px; 
+    height: 400px;
 }
-
