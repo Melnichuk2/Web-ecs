@@ -16,41 +16,46 @@
         <button onclick="goToSocialMedia()">Соціальні мережі</button>
     </footer>
 
-    <location>
-    <ul id="locations-list" class="button-list horizontal-list">
-        <button id="locations-toggle" onclick="toggleLocations()">Парк</button>
-            <ul id="location-list" class="hidden button-list vertical-list">
-                <li><button onclick="showLocation('Фонтан')">Фонтан</button>
-                <li><button onclick="showLocation('Басейн')">Басейн</button>
-            </ul>
-        </li>
-        <button id="locations-toggle" onclick="toggleLocations()">Уніерситет</button>
-            <ul id="location-list" class="hidden">
-                <li><button onclick="showLocation('Головний фхід в ХДУ')">Віхд в ХДУ</button>
-                <li><button onclick="showLocation('Бібліотека')">Бібліотека</button>
-                <li><button onclick="showLocation('Роздягальня')">Роздягальня</button>
-            </ul>
-        </li>
-        <button id="locations-toggle" onclick="toggleLocations()">Ліцей</button>
-            <ul id="location-list" class="hidden">
-                <li><button onclick="showLocation('Фонтан')">Фонтан</button>
-            </ul>
-        </li>
-    </ul>        
-    </location>
+<nav>
+    <div class="dropdown">
+        <button class="dropbtn">Університет</button>
+        <div class="dropdown-content">
+          <a onclick="showLocation('Вхід до')">Вхід до</a>
+          <a onclick="showLocation('Хол')">Хол</a>
+          <a onclick="showLocation('Роздягальня')">Розлягальня</a>
+        </div>
+      </div>
     
-    <main> 
+    <div class="dropdown">
+        <button class="dropbtn">Парк</button>
+        <div class="dropdown-content">
+          <a onclick="showLocation('Фонтан')">Фонтан</a>
+          <a onclick="showLocation('Панелі')">Панелі</a>
+          <a onclick="showLocation('Спортивний майданчик')">Спорт-майданчик</a>
+    </div> 
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Ліцей</button>
+        <div class="dropdown-content">
+          <a onclick="showLocation('Вхід до ліцею')">Вхід до ліцею</a>
+          <a onclick="showLocation('ооооо')">ооооо</a>
+          <a onclick="showLocation('орррр')">орррр</a>
+    </div> 
+    </div>
+      
+</nav> 
+
+    <main>
         <div id="location-info">
-            <img id="location-image" src="" alt="Фотография локации">
-            <p id="location-description">Описание локации</p>
+        <img id="location-image" src="" alt="Фотография локации">
+        <p id="location-description">Опис локації</p>
         </div>
     </main>
-    
-    
+
     <footer>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
