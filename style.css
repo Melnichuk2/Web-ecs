@@ -175,19 +175,21 @@ img {
 }
 
 .dropmap {
-    background-color: #3498DB;
+    background-color: #004499;
     color: white;
-    padding: 16px;
+    padding: 11px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     position: relative;
     display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
 }
  
 
 .dropmap:hover, .dropmap:focus {
-    background-color: #2980B9;
+    background-color: #004499;
 }
 
 .map-content {
@@ -198,7 +200,7 @@ img {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     top: 24%;
-    left: 55%;
+    left: 57%;
     transform: translateX(-10%);
     
 }
