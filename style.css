@@ -9,20 +9,69 @@ header {
     color: #004499;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .nav{
     background-color: #ececec;
+    
 }
 
+/*-------link-----------*/
+.link {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.link + .link {
+    margin-top: 20px; 
+} 
+
+.link-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; 
+    left: 0; 
+}
+
+.link-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.link-content a:hover {
+    background-color: #fff;
+}
+
+.link:hover .link-content {
+    display: block;
+}
+
+.link-content a img {
+    max-width: 20px; 
+    max-height: 22px; 
+   display: block;
+    margin: auto; 
+    border-radius: 5px;
+}
+
+/*------drop--------*/
 .dropbtn {
     background-color: #004499;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
-    width: 140px; 
-    height: 50px; 
+    width: 169px; 
+    height: 55px; 
+    
 }
 
 .dropdown {
@@ -61,7 +110,7 @@ header {
 .dropdown:hover .dropbtn {
     background-color: #0653b4;
 }
-
+/*--------main------- */
 
 main {
     background-color: #eaeaf1;
@@ -69,21 +118,35 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     margin: 20px;
+    border-radius: 5px;
+    
 }
 
 #location-info {
     width: 60%;
     padding: 20px;
     display: flex;
+    flex: 1;
 }
+
+#location-image {
+    width: 500px; 
+    height: auto; 
+}
+
+#location-description {
+    margin-left: 20px; 
+}
+
 
 footer {
     background-color: #eaeaf1;
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
 }
-
+/*-----------button--------*/
 button {
     background-color: #004499;
     color: #fff;
@@ -91,6 +154,7 @@ button {
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -101,4 +165,75 @@ button:hover {
 img {
     width: 600px; 
     height: 400px;
+    border-radius: 5px;
+}
+
+/*---------карта ------------*/
+
+.toggle-map {
+    display: none;
+}
+
+.dropmap {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+ 
+
+.dropmap:hover, .dropmap:focus {
+    background-color: #2980B9;
+}
+
+.map-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 24%;
+    left: 55%;
+    transform: translateX(-10%);
+    
+}
+
+#toggleMap:checked ~ .map-content {
+    display: block;
+}
+
+#loc-image {
+    width: 100%; 
+    height: auto; 
+}
+
+
+
+
+/*----------------маркер----------*/
+
+#image-container {
+    position: relative;
+    display: inline-block; /* Для обеспечения корректного позиционирования меток */
+}
+
+
+.marker {
+    position: absolute;
+    width: 20px; /* Размер метки */
+    height: 20px;
+    background-color: #3498db; /* Цвет метки */
+    border: 2px solid #ffffff; /* Белая обводка */
+    border-radius: 50%; /* Закругленные края для создания круглой формы */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.marker:hover {
+    background-color: #2980b9; /* Изменение цвета метки при наведении */
 }
