@@ -221,7 +221,7 @@ img {
 
 #image-container {
     position: relative;
-    display: inline-block; /* Для обеспечения корректного позиционирования меток */
+    display: inline-block;
 }
 
 
@@ -236,5 +236,5 @@ img {
     transition: background-color 0.3s ease; 
 }
 .marker:hover {
-    background-color: #2980b9; /* Изменение цвета метки при наведении */
+    background-color: #2980b9;
 }
