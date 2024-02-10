@@ -227,15 +227,14 @@ img {
 
 .marker {
     position: absolute;
-    width: 20px; /* Размер метки */
+    width: 20px; 
     height: 20px;
-    background-color: #3498db; /* Цвет метки */
-    border: 2px solid #ffffff; /* Белая обводка */
-    border-radius: 50%; /* Закругленные края для создания круглой формы */
+    background-color: #3498db; 
+    border: 2px solid #ffffff; 
+    border-radius: 50%; 
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    transition: background-color 0.3s ease; 
 }
-
 .marker:hover {
     background-color: #2980b9; /* Изменение цвета метки при наведении */
 }
