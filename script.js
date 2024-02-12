@@ -91,3 +91,8 @@ function goToHome() {
     window.location.href = "index.html";
 }
 
+function toggleMenu() {
+    var navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('show-menu');
+  }
+  
