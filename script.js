@@ -22,7 +22,7 @@ function showLocation(location) {
             break;
         case 'Спортивний майданчик':
             locationImage.src = "jpg/спорт.jpg";
-            locationDescription.innerText = "Спортивний майданчик для молоді. Тут студенти та прості відвідувачі можуть позайматися спортом, тут є все необхідне для цього, потрібно лише бажання) ";
+            locationDescription.innerText = "Спортивний майданчик - це місце, де студенти, викладачі та співробітники можуть займатися фізичними вправами та спортом, підтримуючи своє здоров'я та активний спосіб життя. Це обладнане спеціальними спортивними майданчиками, де можна грати у баскетбол, волейбол, футбол, теніс, а також виконувати різноманітні вправи на брусах, турніках, тренажерах та іншому обладнанні. Спортивний майданчик є місцем, де спільнота університету може об'єднатися для занять спортом, розвитку фізичних навичок та відпочинку від навчання чи роботи. Він також сприяє формуванню дружніх стосунків та підтримує здорову атмосферу в університетському середовищі. Спортивний майданчик університету є важливим елементом студентського життя, який сприяє фізичному, емоційному та соціальному благополуччю університетської спільноти.";
             break;
         case 'Панелі':
             locationImage.src = "jpg/панелі.jpg";
@@ -101,12 +101,60 @@ function showLocation(location) {
             locationImage.src = "jpg/ліцей.jpg";
             locationDescription.innerText = "Вхід до Херсонського академічного ліцею ім.О.В.Мішукова";
             break;
+            case 'Хол':
+            locationImage.src = "jpg/першийповерх.jpg";
+            locationDescription.innerText = " ";
+            break;
+            case '1 поверх':
+            locationImage.src = "jpg/першийповерх.jpg";
+            locationDescription.innerText = "1 поверх ";
+            break;
+            case '2 поверх':
+            locationImage.src = "jpg/першийповерх.jpg";
+            locationDescription.innerText = " 2 поверх";
+            break;
+            case '3 поверх':
+            locationImage.src = "jpg/першийповерх.jpg";
+            locationDescription.innerText = "3 поверх ";
+            break;
+            case '5 поверх':
+            locationImage.src = "jpg/першийповерх.jpg";
+            locationDescription.innerText = " 5 поверх";
+            break;
+            case '5 поверх':
+            locationImage.src = "jpg/першийповерх.jpg";
+            locationDescription.innerText = " 5 поверх";
+            break;
             
 /*---------------навчально-лабораторного комплексу ХДУ №5-----------*/            
         case 'Вхід до навчально-лабораторного комплексу ХДУ №5':
             locationImage.src = "jpg/комплекс.jpg";
             locationDescription.innerText = "Вхід в університет - це портал до навчального світу, який відкривається перед студентами, викладачами та відвідувачами. Цей вхід, будь то головний арка або двері з символічними елементами, вражає своєю величчю та архітектурною вишуканістю. Крім того, він відображає дух університету, його цінності та завдання. Пройшовши через ці порти, люди занурюються у навчальне середовище, де вони зможуть розвивати свої знання, розширювати свій світогляд та поглиблювати розуміння світу навколо себе. Вхід в будівлю університету стає першим кроком у величезному світі освіти та відкриває двері до безмежних можливостей навчання та саморозвитку.";
             break;   
+        case 'Хол':
+        locationImage.src = "jpg/.jpg";
+        locationDescription.innerText = " хол";
+            break;
+        case 'поверх 1':
+            locationImage.src = "jpg/.jpg";
+            locationDescription.innerText = " поверх 1";
+            break;
+        case 'поверх 2':
+            locationImage.src = "jpg/.jpg";
+            locationDescription.innerText = " поверх 2";
+            break;
+        case 'поверх 3':
+            locationImage.src = "jpg/.jpg";
+            locationDescription.innerText = " поверх 3";
+            break;
+        case 'поверх 4':
+            locationImage.src = "jpg/.jpg";
+            locationDescription.innerText = " поверх 4";
+            break;
+        case 'поверх 5':
+            locationImage.src = "jpg/.jpg";
+            locationDescription.innerText = " поверх 5";
+            break;    
             
 /*---------------басейн---------*/            
         case 'Вхід до басейну':
@@ -133,6 +181,8 @@ function toggleMenu() {
     var navMenu = document.getElementById('nav-menu');
     navMenu.classList.toggle('show-menu');
   }
+  
+  
   
   
   
