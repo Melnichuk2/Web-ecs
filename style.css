@@ -65,6 +65,9 @@ header {
     display: none; 
     cursor: pointer;
 }
+.nav{
+    background-color: #f1f1f1;  
+}
 
 .dropbtn {
     background-color: #004499;
@@ -93,8 +96,8 @@ header {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    overflow-y: auto;
-    max-height: 200px; 
+    overflow-y: auto; 
+    max-height: 200px;
 }
 
 
@@ -143,9 +146,10 @@ main {
 }
 
 #location-description {
-    margin-left: 40px;
-    font-size: 19px; 
-    line-height: 1.3;
+    margin-left: 50px;
+    font-size: 1.6vw; 
+    line-height: 1.5;
+    
 }
 
 
@@ -233,7 +237,7 @@ img {
 
 #image-container {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
 }
 
 
@@ -265,7 +269,7 @@ img {
 
       #location-description {
     margin-left: 40px;
-    font-size: 15px; 
+    font-size: 1.7vw;
 } 
        #location-image {
     width: 60%; 
@@ -291,8 +295,9 @@ img {
     }
 
      #location-description {
-    margin-left: 10px;
-    font-size: 15px; 
+       margin-left: 10px;
+    font-size: 15px;
+         
 }
      
      #location-image {
@@ -322,7 +327,7 @@ img {
     left: 15%;
     transform: translateX(-50%);
     z-index: 999;
-    overflow-y: auto; 
+    overflow-y: auto;
     border: 1px solid #ccc; 
     border-radius: 5px; 
   }
@@ -340,10 +345,10 @@ img {
    
      .map-content {
    left: 30%;  
-}
+   }
      
-     .nav.show-menu {
+    .nav.show-menu {
         left: 20%;  
-      }
+    }
         
     }
