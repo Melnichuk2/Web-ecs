@@ -66,7 +66,7 @@ header {
     cursor: pointer;
 }
 .nav{
-    background-color: #f1f1f1;  
+    background-color: white;  
 }
 
 .dropbtn {
@@ -160,7 +160,7 @@ footer {
     text-align: center;
     border-radius: 5px;
 }
-/*-----------button--------*/
+/*-----------кнопки--------*/
 
 button {
     background-color: #004499;
@@ -230,10 +230,10 @@ img {
     height: auto; 
 }
 
-*/
 
 
-/*----------------маркер----------
+
+----------------маркер----------
 
 #image-container {
     position: relative;
@@ -255,7 +255,7 @@ img {
     background-color: #2980b9; 
 }
 
-   */
+*/
     
    /*--------адаптация---------*/
    @media only screen and (max-width: 1020px) {
